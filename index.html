@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>WebPage with Bootstrap</title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="57">
+    <!-- HEADER -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main">La Conferencia</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#speakers">Los Oradores</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#place-time">El lugar y la fecha</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#conviertete-orador">Conviertete en orador</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-platzi" href="#"  data-toggle="modal" data-target="#modalCompra">Compra de tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER -->
+
+    <!-- MAIN -->
+    <main id="main">
+        <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="hawaii.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="hawaii1.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="hawaii0.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+
+            <div class="overlay">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="offset-md-6 col-md-6 text-center text-md-right">
+                            <h1 class="">Platzi Conf Perú</h1>
+
+                            <p class="d-none d-md-inline-block mt-2 mb-4">Platzi Conf llega por primera vez a Hawaii para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de internet. Ven a conocer a miembros del Team Platzi, a otros estudiantes y a los oradores de primer nivel que tenemos para ti.</p>
+
+                            <a href="#" class="btn btn-outline-success">Quiero ser orador</a>
+
+                            <button type="button" class="btn btn-platzi"  data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- MAIN -->
+
+    <!-- SPEAKERS -->
+    <section id="speakers" class="mt-4 mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center text-uppercase">
+                    <small>Conoce a los</small>
+                    <h2>Oradores</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="card">
+                        <img class="card-img-top" src="sacha.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0">Sacha Lifszyc</h4>
+                            <div class="badges">
+                                <span class="badge badge-warning">JavaScript</span>
+                                <span class="badge badge-info">React</span>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>                      
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="card">
+                        <img class="card-img-top" src="leonidas.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0">Leonidas Esteba</h4>
+                            <div class="badges">
+                                <span class="badge badge-danger">HTML5</span>
+                                <span class="badge badge-info">jQuery</span>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>                      
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="card">
+                        <img class="card-img-top" src="freddy.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0">Freddy Vega</h4>
+                            <div class="badges">
+                                <span class="badge badge-primary">JavaScript</span>
+                                <span class="badge badge-warning">React</span>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>                      
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mt-2 mb-2">
+                    <div class="card">
+                        <img class="card-img-top" src="cvander.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title mb-0">Christian Van Der H.</h4>
+                            <div class="badges">
+                                <span class="badge badge-success">JavaScript</span>
+                                <span class="badge badge-danger">React</span>
+                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title
+                                and make up the bulk of the card's content.
+                            </p>
+                        </div>
+                    </div>                      
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SPEAKERS -->
+
+    <!-- LUGAR Y FECHA -->
+    <section id="place-time">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-6 pl-0 pr-0">
+                    <img src="sv.jpg" alt="">
+                </div>
+                <div class="col-12 col-lg-6 pt-3 pb-4">
+                    <h3 class="text-center text-md-left">San Vicente de Cañete - Abril 2030</h3>
+
+                    <p>La ciudad de San Vicente de Cañete es la capital de la provincia en la cual se ubica y es conocida como la  “Cuna y Capital del Arte Negro Nacional”, esto último, se justifica, en el hecho de que, durante la Colonia, se crearon muchas haciendas en el valle de Cañete, donde se llevaron a trabajar a grandes cantidades de esclavos africanos que, con el pasar del tiempo, heredaron sus costumbres a la población.</p>
+
+                    <a href="#" class="btn btn-outline-warning">Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LUGAR Y FECHA -->
+
+    <!-- CONVIERTETE EN SPEAKER -->
+    <section id="conviertete-orador" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col text-uppercase text-center">
+                    <small>Conviértete en un</small>
+                    <h2>Orador</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-center">
+                    Anótate como orador para dar una <abbr data-toggle="tooltip" title="Charlas de 5 minutos">charla ignite</abbr>.
+                    Cuéntanos de qué quieres hablar.
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-md-10 col-lg-8 offset-md-1 offset-lg-2 pt-2">
+                    <div class="form-row">
+                        <div class="form-group col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group col-12 col-md-6">
+                            <input type="text" class="form-control" placeholder="Ingrese su apellido">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="for-group col">
+                            <textarea name="text" id="text" cols="30" rows="5" class="form-control form-control-lg" placeholder="Sobre que quieres habla?"></textarea>
+                            <small class="form-text text-muted">
+                                Recuerda incluir un título para tu clarla
+                            </small>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="mt-3 col">
+                            <button type="button" class="btn btn-platzi btn-block">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONVIERTETE EN SPEAKER -->
+
+    <!-- FOOTER -->
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md-6">
+                    <a href="#">Preguntas Frecuentes</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="#">Contactanos</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="#">Prensa</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="#">Terminos y Condiciones</a>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <a href="#">Privacidad</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="#">Estudiantes</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- Modal -->
+    <div class="modal" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalCenteredLabel">Comprar Tickets</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                    </div>
+
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="alert alert-warning" role="alert"> Recibiras un correo de confirmación si sales sorteado.
+                    </div>
+                      
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-platzi">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
